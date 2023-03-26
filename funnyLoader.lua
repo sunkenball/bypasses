@@ -16,7 +16,7 @@ local games = {
 
 local url = games[game.PlaceId]:gsub("https://raw.githubusercontent.com/CrazyHub123/ILIKEBALLS/main/", "https://github.com/sunkenball/bypasses/blob/main/")
 
-local src = game:HttpGet(url)
+local src = game:HttpGet(url .. "?raw=true")
 
 local func = loadstring(src)
 
